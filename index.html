@@ -1,60 +1,182 @@
 <html>
     <head>
-        <title>chocolate
-        </title>
+        <title>help syria</title>
         <style>
-            body {
-                background-color:burlywood;
+            body{
+                text-align: center;
             }
-            #gen{
-                border-radius: 60%;
-                height: 250px;
-                width: 250px;
-                margin: 40px;
-                \
+            #dad{
+                display: flex;
+                height: 200px;
+                background-color: bisque;
             }
-            .all{
-                font-family:cursive;
-                background-color: chocolate;
+           
+            .baby{
+                text-align: center;
+                flex: 1;
+               
+                height: 180px;
+                width: 350px;
+            }
+            .imgbut{
+                height: 40px;
+                width: 66px;
+            }
+            #cry{    
+                height: 170px;
                 width: 320px;
+            }
+            .alin{
+                border-radius: 75%;
+            }
+            #header{
+                font-family: cursive;
+                color: crimson;
+                font-size: 300%;
+                background-color: bisque;
+               
+              
+            }
+            .jj{
+                border-radius: 13%
+            }
+            .3{
+                color: crimson;
+            }
+            @keyframes move{
+                0%{
+                    left: 25%;
+                }
+                10%{
+                    left: 0%;
+                }
+                 17%{
+                    left: 25%;
+                }
+                 25%{
+                    left: 0%;
+                }
+                70%{
+                    left:100%;
+                }
+                100%{
+                    left:25%;
+                }
+                
+            }
+            .move-container{
+                height: 133px;
+            }
+            #move{ 
+                animation: move 15s infinite;
+                background-color: crimson;
+                height: 120px;
+                width: 50px;
+                position: absolute;
+                left: 25%;
+            }
+             #move2{ 
+                animation: move2 15s infinite;
+                background-color: crimson;
+                height: 120px;
+                width: 50px;
+                position: absolute;
+                right: 25%;
+            }
+             @keyframes move2{
+                0%{
+                    right: 25%;
+                }
+                10%{
+                    right: 0%;
+                }
+                 17%{
+                    right: 25%;
+                }
+                 25%{
+                    right: 0%;
+                }
+                70%{
+                    right:100%;
+                }
+                100%{
+                    right:25%;
+                }
+                
+            }
+            .nn{
+                height: 300px;
+                width: 360px;
+            }
+            .mac{
+                height: 5px;
+                background-color: crimson;
+            }
+            #movingBox {
+               top: 20px;
+               left: 20px;
+               position: absolute;
+               width: 100px;
+               height: 100px;
+               background-color: red;
+               text-align: center;
+               line-height: 100px;
+             }
             
+            @keyframes borderRadius {
+                from {
+                    border-radius: 50%;
+                }
+                to {
+                    border-radius: 20%;
+                }
             }
-            .ch{
-                height: 150px;
-                width: 155px;
-            }
-    
+             .moving {
+               animation: borderRadius 4s infinite;
+             }
         </style>
-    
     </head>
     <body>
-        <h1 di="">chocolate</h1>
-    <img id="gen" src="http://s.eatthis-cdn.com/media/images/ext/402514435/dark-chocolate-md.jpg"/>
+        <div id="dad"> 
+            <div class="baby">
+                <a href="https://ar-ar.facebook.com/"> 
+                    <img id="movingbox" class="imgbut alin" src="https://www.technobezz.com/files/uploads/2016/03/download.jpg"/></a>
+                
+            </div>
+            <div class="baby">
+                <img id="cry"  class="imgbut alin" src="http://www.englishvocabularyexercises.com/Images/Refugee%20Project/crying%20child.jpg"/>
+            </div>
+        </div>
+        <div id="divo">
+            <h1 id="header">help syria!</h1>
+        </div>
+        <div class="mac"></div>
+        <div class="move-container">
+           <div class="jj" id="move"></div>
+           <div class="jj" id="move2"></div>
+        </div>
+        <div class="mac"></div>
+        <div>
+            <h2 class="3">Our project want to help Syrian people that can't have access to food</h2>
+        <h4>Refugees fleeing Syria continue to enter Lebanon on a daily basis. Over 53,000 Palestinian refugees from Syria (PRS) are now residing in Lebanon. The vast majority of these refugees fled Syria with no possessions or cash and now live in very difficult, and often cramped, conditions, unable to find any kind of employment to support their families. These families lack everything from food to clothing, from mattresses to cooking equipment, from basic shelter to hygiene items.</h4>
+            
+        </div>
+        <img class="nn" src="https://vid.alarabiya.net/images/2015/03/24/0f707e6a-292b-4a51-a644-a0a6e446bd53/0f707e6a-292b-4a51-a644-a0a6e446bd53_16x9_788x442.jpg"/>
+        <img class="nn" src="https://cdn-images-1.medium.com/max/1600/1*zz7EU0HGZZf5wI0fi4zQRw.jpeg"/>
+        <div class="mac"></div>
+        <script type="text/javascript">
+          var box = document.getElementById('cry');
+          function addMovingBoxClass() {
+          if(box.className === 'moving'){
+          box.className = ''
+          }else{
         
-    <h1 class="all">chocolate types</h1>
-    <ul>
-        <li>
-          dark chocolate
-            <img class="ch"
-                 src="https://i.ytimg.com/vi/zrkgh0CII68/maxresdefault.jpg"/>
-        </li>
-        <br>
-        <li> Milk Chocolate
-            <img class="ch" src="http://i.huffpost.com/gadgets/slideshows/359488/slide_359488_4008550_free.jpg"/>
-        </li>
-        <br>
-        <li>Sweet Chocolate
-            <img class="ch"
-                 src="http://stuffpoint.com/chocolate/image/45152-chocolate-love-it.jpg"/>
-        </li>
-        <br>
-        <li>White Chocolate
-            <img class="ch" src="http://sweets.seriouseats.com/images/2014/04/shutterstock_147390839.jpg"/>
-        </li>
-        <br>
-        
-        </ul>
-        <h1 class="all"> <a href="https://authoritynutrition.com/7-health-benefits-dark-chocolate/"> chocolate benefits</a></h1>
-    
+          box.className = 'moving'
+           }
+          }
+          box.onclick = addMovingBoxClass
+        </script>
     </body>
+
+
 </html>
